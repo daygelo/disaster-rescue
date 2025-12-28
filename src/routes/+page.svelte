@@ -1,5 +1,6 @@
 <script lang='ts'>
   import { autonomousState, debrisState, ecuState, lobbyState, type ECUPartState } from '$lib/states.svelte';
+  import NumberFlow from '$lib/NumberFlow.svelte';
   import AutoSection from './AutoSection.svelte';
   import DebrisSection from './DebrisSection.svelte';
   import ECUSection from './ECUSection.svelte';
@@ -34,8 +35,12 @@
   const totalPoints = $derived(lobbyPoints + debrisPoints + ecuPoints + autonomousPoints);
 </script>
 
-<main class='w-full min-h-screen flex flex-col justify-center items-center py-16'>
-  <p class='mb-8 text-xl'>Total: {totalPoints}/100</p>
+<main class='w-full min-h-screen flex flex-col justify-center items-center py-16 bg-stone-900 text-orange-100 md:text-lg font-sans'>
+
+  <header class='flex items-baseline gap-8'>
+    <p class='text-stone-600 text-4xl font-extrabold tracking-tight uppercase'>Total Score</p>
+    <p><span class='inline-block w-[140px] text-right text-7xl font-display text-white text-shadow-[1px_2px] text-shadow-amber-500 translate-y-1'><NumberFlow value={totalPoints}/></span> / 100</p>
+  </header>
   <div class='grid grid-cols-1 sm:grid-cols-[auto_auto] gap-16'>
     <div class='space-y-12'>
       <LobbySection points={lobbyPoints}/>

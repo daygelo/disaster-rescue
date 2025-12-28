@@ -1,1 +1,23 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  font-feature-settings: 'tnum', 'ss04';
+  src: url('../lib/assets/fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Array;
+  src: url('../lib/assets/fonts/Array-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: Inter, sans-serif;
+  --font-display: Array, sans-serif;
+}

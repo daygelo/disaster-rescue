@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 
@@ -7,6 +7,6 @@
 
 <svelte:head>
 	<title>Disaster Rescue – Score Calculator</title>
-	<link rel="icon" href={favicon} />
+	<link rel='icon' href={favicon} />
 </svelte:head>
 {@render children()}
