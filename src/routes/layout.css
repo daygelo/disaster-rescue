@@ -1,12 +1,19 @@
 @import 'tailwindcss';
 
 @font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 100 900;
+  font-family: Iosevka Aile;
+  src: url('../lib/assets/fonts/IosevkaAile-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-display: swap;
-  font-feature-settings: 'tnum', 'ss04';
-  src: url('../lib/assets/fonts/InterVariable.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Iosevka Aile;
+  src: url('../lib/assets/fonts/IosevkaAile-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
@@ -18,6 +25,6 @@
 }
 
 @theme {
-  --font-sans: Inter, sans-serif;
+  --font-sans: Iosevka Aile, sans-serif;
   --font-display: Array, sans-serif;
 }

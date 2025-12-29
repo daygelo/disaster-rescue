@@ -35,18 +35,18 @@
   const totalPoints = $derived(lobbyPoints + debrisPoints + ecuPoints + autonomousPoints);
 </script>
 
-<main class='w-full min-h-screen flex flex-col justify-center items-center py-16 bg-stone-900 text-orange-100 md:text-lg font-sans'>
+<main class='w-full min-h-screen flex flex-col justify-center items-center py-16 bg-stone-900 text-orange-100 font-sans'>
 
   <header class='flex items-baseline gap-8'>
     <p class='text-stone-600 text-4xl font-extrabold tracking-tight uppercase'>Total Score</p>
-    <p><span class='inline-block w-[140px] text-right text-7xl font-display text-white text-shadow-[1px_2px] text-shadow-amber-500 translate-y-1'><NumberFlow value={totalPoints}/></span> / 100</p>
+    <p><span class='inline-block w-35 text-right text-7xl font-display text-white text-shadow-[1px_2px] text-shadow-amber-500 translate-y-1'><NumberFlow value={totalPoints}/></span> / 100</p>
   </header>
   <div class='grid grid-cols-1 sm:grid-cols-[auto_auto] gap-16'>
-    <div class='space-y-12'>
+    <div class='space-y-10'>
       <LobbySection points={lobbyPoints}/>
       <DebrisSection points={debrisPoints}/>
     </div>
-    <div class='space-y-12'>
+    <div class='space-y-10'>
       <ECUSection points={ecuPoints}/>
       <AutoSection points={autonomousPoints}/>
     </div>
