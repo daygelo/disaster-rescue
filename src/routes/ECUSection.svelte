@@ -23,8 +23,8 @@
 </script>
 
 <section class='flex flex-col items-center gap-2'>
-  <header class='flex items-baseline gap-6'>
-    <h2 class='-mx-6 w-max text-stone-600 text-2xl font-extrabold tracking-tighter uppercase scale-x-85'>Environmental Control Unit</h2>
+  <header class='flex items-baseline gap-10'>
+    <h2 class='-mx-6 w-max text-stone-600 text-2xl font-extrabold tracking-tighter uppercase scale-x-90'>Environmental Control Unit</h2>
     <p><span class='inline-block w-18 text-5xl text-right font-display text-white text-shadow-[1px_1px] text-shadow-amber-500 translate-y-1'><NumberFlow value={points}/></span> / 44</p>
   </header>
   <div class='flex items-end gap-4 p-4 rounded-lg border border-stone-700 shadow-inner shadow-stone-950/50'>
