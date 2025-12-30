@@ -55,6 +55,6 @@ export const autonomousState: AutonomousState = $state({
   isAutonomousInZone: false,
   supplyItemsDelivered: 0,
   supplyItemsOrientated: 0,
-  workersStanding: 2,
+  workersStanding: 0,
   isFanPlaced: false,
 });
