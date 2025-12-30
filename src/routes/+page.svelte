@@ -93,8 +93,8 @@
     <a class='max-md:hidden absolute bottom-2 left-2 text-stone-700 hover:text-stone-500 opacity-0 group-hover:opacity-100 transition' href='https://github.com/daygelo/disaster-rescue' target='_blank'>
       <GitHubIcon class='size-6'/>
     </a>
-    <p class='text-stone-700 text-3xl font-extrabold tracking-tight uppercase'>Total</p>
-    <p><span class='inline-block w-35 text-right text-7xl font-display text-white text-shadow-[1px_2px] text-shadow-amber-500 translate-y-1'><NumberFlow value={totalPoints}/></span> / 100</p>
+    <p class='text-stone-700 text-xl sm:text-3xl font-extrabold tracking-tight uppercase'>Total</p>
+    <p><span class='inline-block w-24 sm:w-35 text-right text-5xl sm:text-7xl font-display text-white text-shadow-[1px_2px] text-shadow-amber-500 translate-y-1'><NumberFlow value={totalPoints}/></span> / 100</p>
     <div class='absolute top-4 right-4 flex flex-col items-end gap-2 opacity-0 group-hover:opacity-100 transition'>
       <button class='px-2 py-0.5 rounded bg-stone-800 hover:bg-stone-700 text-red-500 shadow-sm shadow-black/50' onclick={resetState}>Reset to 0</button>
       <button class='px-2 py-0.5 rounded bg-stone-800 hover:bg-stone-700 shadow-sm shadow-black/50' onclick={fillState}>Fill to 100</button>

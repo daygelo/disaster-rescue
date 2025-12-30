@@ -23,11 +23,13 @@
 </script>
 
 <section class='flex flex-col items-center gap-2'>
-  <header class='flex items-baseline gap-8'>
-    <h2 class='w-max text-stone-600 text-xl font-extrabold tracking-tighter uppercase'>Environmental Control Unit</h2>
+  <header class='flex sm:items-baseline gap-8'>
+    <h2 class='w-max text-stone-600 text-xl font-extrabold tracking-tighter uppercase'>
+      Environmental <br class='sm:hidden'>Control Unit
+    </h2>
     <p><span class='inline-block w-18 text-4xl text-right font-display text-white text-shadow-[1px_1px] text-shadow-amber-500 translate-y-0.5'><NumberFlow value={points}/></span> / 44</p>
   </header>
-  <div class='flex items-end gap-4 p-4 rounded-lg bg-stone-800/25 shadow-3d-inset'>
+  <div class='flex items-end gap-4 p-4 rounded-lg bg-stone-800/25 shadow-3d-inset max-sm:text-xs'>
     <div class='flex flex-col items-center gap-4'>
       <div class='flex gap-4'>
         {#each state.fuses as x, i}
@@ -71,8 +73,8 @@
       {/each}
     </div>
   </div>
-  <button class={`flex items-baseline gap-4 mt-2 px-4 pt-1 pb-1.5 rounded bg-stone-800 shadow-black/50 text-left text-base transition duration-50 ${minimumPartsInZone === 8 ? 'opacity-50' : 'hover:bg-stone-800/75 active:translate-y-0.5 shadow-xs'}`} onclick={() => state.newPartsInZone = state.newPartsInZone < 8 ? state.newPartsInZone + 1 : 0}>
+  <button class={`flex sm:items-baseline gap-4 mt-2 px-4 pt-1 pb-1.5 rounded bg-stone-800 shadow-black/50 text-left sm:text-base transition duration-50 ${minimumPartsInZone === 8 ? 'opacity-50' : 'hover:bg-stone-800/75 active:translate-y-0.5 shadow-xs'}`} onclick={() => state.newPartsInZone = state.newPartsInZone < 8 ? state.newPartsInZone + 1 : 0}>
     <p><span class='text-2xl font-bold text-white text-shadow-sm text-shadow-stone-900'><NumberFlow value={state.newPartsInZone}/></span>/8</p>
-    <p>Total New Components <em>Brought</em> To ECU Zone</p>
+    <p>Total New Components <br class='sm:hidden'><em>Brought</em> To ECU Zone</p>
   </button>
 </section>
